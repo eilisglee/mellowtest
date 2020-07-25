@@ -1,4 +1,4 @@
-<?php get_header('secondary'); ?>
+<?php get_header(); ?>
 
 <div class="container">
 
