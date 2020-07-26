@@ -27,5 +27,8 @@
             </a>
         <?php endforeach ?>
 
+        <!-- Comment template -->
+        <!--comments_template();-->
+
 <?php endwhile;
 else : endif; ?>
