@@ -60,3 +60,37 @@ function my_sidebars()
     );
 }
 add_action('widgets_init', 'my_sidebars');
+
+function my_first_post_type()
+{
+    $args = array(
+
+        'labels' => array(
+            'name' => 'Items',
+            'singular_name' => 'Item'
+        ),
+        'hierarchical' => true, //false for post, true for page
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-store',
+        'supports' => array('title', 'editor', 'thumbnail'),
+        //'rewrite' => array('slug' => 'item')
+    );
+    register_post_type('items', $args);
+}
+add_action('init', 'my_first_post_type');
+
+function my_first_taxonomy()
+{
+    $args = array(
+
+        'labels' => array(
+            'name' => 'Brands',
+            'singular_name' => 'Brand'
+        ),
+        'public' => true,
+        'hierarchical' => true
+    );
+    register_taxonomy('brands', array('items'), $args);
+}
+add_action('init', 'my_first_taxonomy');
