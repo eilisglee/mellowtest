@@ -42,7 +42,8 @@ register_nav_menus(
     array(
         'top-menu' => 'Top Menu Location',
         'mobile-menu' => 'Mobile Menu Location',
-        'footer-menu' => 'Footer Menu Location'
+        'footer-menu' => 'Footer Menu Location',
+        'item-menu' => 'Item Menu Location'
     )
 );
 
@@ -105,3 +106,11 @@ function my_first_taxonomy()
     register_taxonomy('brands', array('items'), $args);
 }
 add_action('init', 'my_first_taxonomy');
+
+function wpb_add_google_fonts()
+{
+
+    wp_enqueue_style('wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap', false);
+}
+
+add_action('wp_enqueue_scripts', 'wpb_add_google_fonts');
