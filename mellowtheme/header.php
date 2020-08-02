@@ -14,13 +14,24 @@
 <body <?php body_class('test'); ?>>
 
     <header>
-        <div class="container d-flex align-items-center justify-content-between">
-            <h1 class="header-logo">mellowlee</h1>
-            <?php wp_nav_menu(
-                array(
-                    'theme-location' => 'top-menu',
-                    'menu_class' => 'top-bar'
-                )
-            ); ?>
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col">
+                        <h1 class="header-logo">mellowlee</h1>
+                    </div>
+                    <div class="col">
+                        <?php wp_nav_menu(
+                            array(
+                                'theme-location' => 'top-menu',
+                                'menu_class' => 'top-bar'
+                            )
+                        ); ?>
+                    </div>
+                </div>
+
+            </nav>
+
         </div>
     </header>

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="page-wrap">
-    <div class="container">
+    <div class="main-container container">
 
         <section class="row">
 

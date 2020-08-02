@@ -107,6 +107,7 @@ function my_first_taxonomy()
 }
 add_action('init', 'my_first_taxonomy');
 
+// Add Google Fonts
 function wpb_add_google_fonts()
 {
     wp_enqueue_style('wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Raleway&display=swap', false);
