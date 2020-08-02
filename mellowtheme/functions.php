@@ -113,3 +113,9 @@ function wpb_add_google_fonts()
     wp_enqueue_style('wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Raleway&display=swap', false);
 }
 add_action('wp_enqueue_scripts', 'wpb_add_google_fonts');
+
+// Register woocommerce
+function mytheme_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );

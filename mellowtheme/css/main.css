@@ -15,7 +15,7 @@
 }
 
 #hero {
-  background-image: url('../images/mellowlee-logo.png');
+  background-image: url("../images/mellowlee-logo.png");
   background-color: #f0f0f0;
   background-size: cover;
 }
@@ -110,7 +110,7 @@ header .top-bar > .menu-item-has-children:hover > .sub-menu {
   display: block;
 }
 
-header 
+header
   .top-bar
   .menu-item-has-children
   .sub-menu
@@ -184,4 +184,9 @@ body {
 
 .content {
   padding: 3rem 0;
+}
+
+.woocommerce-input-wrapper {
+  width: 100%;
+  display: block;
 }
