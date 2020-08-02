@@ -11,10 +11,11 @@
 
 </head>
 
-<body>
+<body <?php body_class('test'); ?>>
 
     <header>
-        <div class="container">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="header-logo">mellowlee</h1>
             <?php wp_nav_menu(
                 array(
                     'theme-location' => 'top-menu',

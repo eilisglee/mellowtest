@@ -1,6 +1,6 @@
-
-<footer>
-        <div class="container">
+<footer class="footer" id="footer">
+    <div class="container">
+        <span class="text-muted">
             <p>Copyright &copy; 2020 Eilis Lee</p>
             <?php wp_nav_menu(
                 array(
@@ -8,9 +8,11 @@
                     'menu_class' => 'footer-bar'
                 )
             ); ?>
-        </div>
-        </footer>
+        </span>
+    </div>
+</footer>
 
-<?php wp_footer();?>
+<?php wp_footer(); ?>
 </body>
+
 </html>
